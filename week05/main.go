@@ -11,8 +11,8 @@ func main() {
 	fmt.Print("input score : ")
 	reader := bufio.NewReader(os.Stdin)
 	inputScore, err := reader.ReadString('\n')	 //option 2
-	if err != nil(
+	if err != nil {
 		log.Fatal(err)
-	)
+	}
 	fmt.Println(inputScore)
 }
