@@ -16,6 +16,7 @@ func main() {
 	fmt.Println(answer)
 
 	for i := 0; i < 10; i++ {
+		fmt.Println("chance left:", 10-i)
 		fmt.Print("input number : ")
 		reader := bufio.NewReader(os.Stdin)
 		inputGuessString, err := reader.ReadString('\n')
