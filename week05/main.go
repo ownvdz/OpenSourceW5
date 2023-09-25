@@ -1,13 +1,14 @@
 package main
 
 import (
+	"bufio"
 	"fmt"
-	"strings"
+	"os"
 )
 
 func main() {
-	HotSpurs := "hm ? j madi?"
-	replacePlayer := strings.NewReplacer("?", "son")
-	player := replacePlayer.Replace(HotSpurs)
-	fmt.Println(player)
+	fmt.Print("input score : ")
+	reader := bufio.NewReader(os.Stdin)
+	inputScore := reader.ReadString('\n')
+	fmt.Println(inputScore)
 }
